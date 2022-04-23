@@ -9,15 +9,15 @@ def tipo(token):
     return t_token
 
 def analizar(op):
+    # Elimina los espacios
+    op = op.replace(' ', '')
+
     tokens = [None] * len(op)
     for i in range(len(op)):
         tokens[i] = [None] * 2
     # Tokens = [token], [tipo de Token]
     str(tokens)
     i = 0
-
-    # Elimina los espacios
-    op.strip()
     tam = 0
     while i < len(op):
         j = i
