@@ -47,6 +47,7 @@ while queuSymbols:
             print(x)
         else:
             print("La cadena ingresada no fue aceptada...")
+            print("Error en el caracter numero " + str(i+1) + ", simbolo: '" + a + "'")
             exit()
     else:
         # prod Es lo que se produce en la tabla
@@ -75,6 +76,7 @@ while queuSymbols:
 
         else:
             print("\n La cadena ingresada no fue aceptada...")
+            print("Error en el caracter numero " + str(i+1) + ", simbolo: '" + a + "'")
             exit()
         print(x + "->" + prod)
 
